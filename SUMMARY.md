@@ -6,11 +6,12 @@
 * [前置](requirements.md)
 * [任务](tasks.md)
 
-## 仓库
+## 起步
 
 * [仓库](repository.md)
 * [基本流程](bao-cun-xiu-gai.md)
 * [暂存区](staging-area.md)
+* [Commit](commit.md)
 
 ## 远程
 
