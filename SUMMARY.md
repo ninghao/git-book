@@ -17,6 +17,7 @@
 * [gitignore](gitignore.md)
 * [检查](checkout.md)
 * [撤消](revert.md)
+* [Reset](reset.md)
 
 ## 远程
 
