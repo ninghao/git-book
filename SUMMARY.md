@@ -15,8 +15,8 @@
 * [提交](commit.md)
 * [日志](log.md)
 * [gitignore](gitignore.md)
+* [检查](checkout.md)
 * [恢复](revert.md)
-* [checkout](checkout.md)
 
 ## 远程
 
