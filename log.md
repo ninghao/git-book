@@ -14,5 +14,17 @@ git log
 git log --oneline
 ```
 
+## 形态
 
+来分析一条日志：
+
+```
+commit b5773ada0737de30941dd4afd10928a96380dd42
+Author: wanghao8080 <117663444@qq.com>
+Date:   Tue May 23 14:36:36 2017 +0800
+
+    设置相关资源文档标题
+```
+
+commit 后面是提交的 ID 号（b5773ada0737de30941dd4afd10928a96380dd42），它可以表示某个具体的提交，完整的 ID 比较长，你可以使用 ID 的一部分来表示某个提交。Author 是提交的作者，Date 是做这次提交的具体的时间，最下面还有做这次提交的时候提供的信息。
 
