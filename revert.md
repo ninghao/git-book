@@ -101,5 +101,79 @@ hint: with 'git add <paths>' or 'git rm <paths>'
 hint: and commit the result with 'git commit'
 ```
 
-这次 Revert 的时候出错了，提示 conflicts ，发生冲突了。
+这次 Revert 的时候出错了，提示 conflicts ，发生冲突了。查看状态，返回：
+
+```
+On branch master
+You are currently reverting commit 0fd9dac.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   resources.md
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+	both modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	access.log
+```
+
+提示：
+
+```
+You are currently reverting commit 0fd9dac
+```
+
+正在撤消提交 0fd9dac，但是有冲突，有冲突的文件是 README.md，打开这个文件看一下，里面的内容像这样：
+
+```
+<<<<<<< HEAD
+# Git :)
+=======
+# git
+>>>>>>> parent of 0fd9dac... 让标题微笑
+```
+
+把发生冲突的地方修改成你想要的样子，应该像这样：
+
+```
+# Git
+```
+
+保存文件，然后执行：
+
+```
+git add README.md
+```
+
+再提交一下：
+
+```
+git commit -m 'Revert "让标题微笑"'
+```
+
+这样这次撤消就完成了。查看历史：
+
+```
+→ git log --oneline
+33c97bc Revert "让标题微笑"
+3dc2c3f Revert "添加 .gitignore"
+fb11f83 让 README.md 标题的首字母大写
+0fd9dac 让标题微笑
+7086650 添加 .gitignore
+b5773ad 设置相关资源文档标题
+23f3c2b 添加相关资源文档
+a454700 设置说明文档的标题
+39975b3 初始化
+```
+
+
 
