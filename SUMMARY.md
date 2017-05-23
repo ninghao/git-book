@@ -9,9 +9,12 @@
 ## 仓库
 
 * [仓库](repository.md)
-* [远程](yuan-cheng.md)
 * [提交](bao-cun-xiu-gai.md)
-* [暂存区](zan-cun-qu.md)
+* [练习](zan-cun-qu.md)
+
+## 远程
+
+* [远程](yuan-cheng.md)
 
 ## 附录
 
