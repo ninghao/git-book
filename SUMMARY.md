@@ -18,7 +18,7 @@
 
 ## 远程
 
-* [远程](yuan-cheng.md)
+* [远程](remote.md)
 
 ## 附录
 
