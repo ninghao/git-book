@@ -14,7 +14,7 @@
 * [状态](status.md)
 * [提交](commit.md)
 * [日志](log.md)
-* [gitignore](gitignore.md)
+* [.gitignore](gitignore.md)
 * [检查](checkout.md)
 * [撤消](revert.md)
 * [重置](reset.md)
