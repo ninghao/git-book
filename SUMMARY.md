@@ -8,5 +8,5 @@
 
 ## 仓库
 
-* [仓库](cang-ku/cang-ku.md)
+* [仓库](repository.md)
 
