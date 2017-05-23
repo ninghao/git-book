@@ -75,7 +75,7 @@ Initial commit
 Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
 
-	new file:   README.md
+    new file:   README.md
 ```
 
 注意这次的显示跟之前查看状态的时候会有变化。Changes to be committed ，将要提交的修改下面有个 new file：README.md，意思是这次要提交的东西里面，包含了一些新文件  README.md 。
