@@ -11,7 +11,7 @@
 * [仓库](repository.md)
 * [基本流程](bao-cun-xiu-gai.md)
 * [暂存区](staging-area.md)
-* [Commit](commit.md)
+* [提交](commit.md)
 
 ## 远程
 
