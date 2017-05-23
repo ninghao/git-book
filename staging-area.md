@@ -117,5 +117,53 @@ Changes to be committed 下面列出的就是将要提交的东西，上面显�
 git commit -m '设置说明文档的标题'
 ```
 
+查看状态，你会发现：
+
+```
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	resources.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+显示工作区上还有个未跟踪的文件 resources.md，之前在暂存区的 README.md 已经不在了，因为我们做了提交。再把 resources.md 放到暂存区准备提交：
+
+```
+git add .
+```
+
+这次我在 add 后面用了一个点，它表示所有的修改还有未跟踪的文件。查看状态会返回：
+
+```
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   resources.md
+```
+
+再去提交一下：
+
+```
+git commit -m '添加相关资源文档'
+```
+
+查看提交历史，执行：
+
+```
+git log --oneline
+```
+
+返回：
+
+```
+23f3c2b 添加相关资源文档
+a454700 设置说明文档的标题
+39975b3 初始化
+```
+
 
 
