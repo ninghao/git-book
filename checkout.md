@@ -103,3 +103,16 @@ Switched to branch 'master'
 
 观察项目文件的变化，再查看一下项目提交的历史。
 
+```
+→ git log --oneline
+fb11f83 让 README.md 标题的首字母大写
+0fd9dac 让标题微笑
+7086650 添加 .gitignore
+b5773ad 设置相关资源文档标题
+23f3c2b 添加相关资源文档
+a454700 设置说明文档的标题
+39975b3 初始化
+```
+
+
+
