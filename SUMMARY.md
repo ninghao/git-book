@@ -9,7 +9,7 @@
 ## 起步
 
 * [仓库](repository.md)
-* [基本流程](bao-cun-xiu-gai.md)
+* [基本流程](basic.md)
 * [暂存区](staging-area.md)
 * [状态](status.md)
 * [提交](commit.md)
