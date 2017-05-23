@@ -15,7 +15,7 @@ git status
 添加要保存的修改的地方。
 
 ```
-git add 文件/目录
+git add
 ```
 
 ## 提交修改
