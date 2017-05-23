@@ -75,12 +75,12 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   README.md
+    modified:   README.md
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	resources.md
+    resources.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -111,7 +111,7 @@ Untracked files:
 
 Changes to be committed 下面列出的就是将要提交的东西，上面显示了 modified: README.md。如果现在做提交，这个提交里面会包含对 README.md 文件做的所有修改。
 
-4，做一次提交，执行：
+**4**，做一次提交，执行：
 
 ```
 git commit -m '设置说明文档的标题'
