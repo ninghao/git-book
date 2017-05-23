@@ -1,6 +1,6 @@
 # Checkout
 
-可以 Checkout 一个分支，或者一个提交。
+可以 Checkout 一个提交，或者一个分支。
 
 ## 练习
 
