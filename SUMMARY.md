@@ -12,6 +12,7 @@
 * [基本流程](bao-cun-xiu-gai.md)
 * [暂存区](staging-area.md)
 * [提交](commit.md)
+* [日志](log.md)
 
 ## 远程
 
