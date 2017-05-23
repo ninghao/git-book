@@ -12,5 +12,5 @@
 
 ## 附录
 
-* [Resources](resources.md)
+* [相关资源](resources.md)
 
