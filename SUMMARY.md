@@ -12,5 +12,5 @@
 
 ## 附录
 
-* [Resources](fu-lu/resources.md)
+* [Resources](resources.md)
 
