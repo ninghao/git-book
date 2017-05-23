@@ -10,6 +10,7 @@
 
 * [仓库](repository.md)
 * [基本流程](bao-cun-xiu-gai.md)
+* [Status](status.md)
 * [暂存区](staging-area.md)
 * [提交](commit.md)
 * [日志](log.md)
