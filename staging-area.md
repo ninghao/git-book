@@ -124,7 +124,7 @@ On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	resources.md
+    resources.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -142,7 +142,7 @@ On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
-	new file:   resources.md
+    new file:   resources.md
 ```
 
 再去提交一下：
