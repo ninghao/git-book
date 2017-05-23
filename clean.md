@@ -17,7 +17,7 @@ On branch master
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	demo.md
+    demo.md
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
@@ -41,5 +41,5 @@ On branch master
 nothing to commit, working tree clean
 ```
 
-
+demo.md 被 Git 干掉了。
 
