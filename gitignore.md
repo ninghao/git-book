@@ -14,7 +14,7 @@ touch access.log
 
 ```
 Untracked files:
-	access.log
+    access.log
 ```
 
 Git 认为 access.log 这个文件是还未跟踪的文件。如果你想在项目里忽略掉这种 .log 结尾的文件，也就是不想把它们放到项目的仓库里，可以创建一个 .gitignore 文件，在里面列出你想忽略掉的文件。
