@@ -5,7 +5,6 @@
 * [介绍](README.md)
 * [前置](requirements.md)
 * [任务](tasks.md)
-* [Clean](clean.md)
 
 ## 起步
 
@@ -19,6 +18,7 @@
 * [检查](checkout.md)
 * [撤消](revert.md)
 * [重置](reset.md)
+* [Clean](clean.md)
 
 ## 远程
 
