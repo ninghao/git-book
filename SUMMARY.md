@@ -9,8 +9,8 @@
 ## 仓库
 
 * [仓库](repository.md)
-* [提交](bao-cun-xiu-gai.md)
-* [暂存区](zan-cun-qu.md)
+* [基本流程](bao-cun-xiu-gai.md)
+* [暂存区](staging-area.md)
 
 ## 远程
 
