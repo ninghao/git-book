@@ -10,6 +10,7 @@
 
 * [仓库](repository.md)
 * [保存修改](bao-cun-xiu-gai.md)
+* [暂存区](zan-cun-qu.md)
 
 ## 附录
 
