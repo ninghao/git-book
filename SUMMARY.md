@@ -10,3 +10,7 @@
 
 * [仓库](repository.md)
 
+## 附录
+
+* [Resources](fu-lu/resources.md)
+
