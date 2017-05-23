@@ -18,7 +18,7 @@
 * [检查](checkout.md)
 * [撤消](revert.md)
 * [重置](reset.md)
-* [Clean](clean.md)
+* [清理](clean.md)
 
 ## 远程
 
