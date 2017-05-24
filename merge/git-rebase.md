@@ -1,6 +1,6 @@
 # git rebase
 
-不解释，直接练：）
+不解释了，直接练：）
 
 ## 练习
 
@@ -87,7 +87,49 @@ git branch -d add-bottom-text
 
 ```
 → git log --oneline --graph
+
 * 40670e5 为 resouces.md 添加底部文字
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+**3**，修复了 bug，切换回 repo-doc，继续完成仓库文档的编写：
+
+```
+git checkout repo-doc
+```
+
+打开 repository.md，把文档修改成这样：
+
+```
+# 仓库
+Repository，仓库，简称 Repo。
+```
+
+做一次提交：
+
+```
+git commit -am '为仓库文档添加一段描述'
+```
+
+查看历史，现在 repo-doc 的历史应该是这样：
+
+```
+ → git log --oneline --graph
+ 
+* 5db5973 为仓库文档添加一段描述
+* 9908ffb 添加仓库文档的大标题
+* e8204c5 添加介绍 Git 仓库的文档
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
 ```
 
 
