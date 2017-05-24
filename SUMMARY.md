@@ -34,6 +34,7 @@
 
 * [远程](remote.md)
 * [Github](github.md)
+* [git remote](git-remote.md)
 
 ## 附录
 
