@@ -27,7 +27,7 @@
 ## 分支
 
 * [分支](branch.md)
-* [Merge](merge.md)
+* [全并](merge.md)
 
 ## 远程
 
