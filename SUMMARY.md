@@ -26,6 +26,7 @@
 ## 重写
 
 * [git commit --amend](rewriting/git-commit-amend.md)
+* [git rebase](rewriting/git-rebase.md)
 
 ## 分支
 
