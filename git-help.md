@@ -1,6 +1,6 @@
 # git --help
 
-git 命令的帮助信息，中文版：
+git 命令的帮助信息。
 
 ```
 → git --help
@@ -47,8 +47,20 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 'git help -a' and 'git help -g' list available subcommands and some
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
+```
 
 
+
+## 检查历史与状态
+
+\(查看：git help revisions\)
+
+```
+  bisect     使用 binary 搜索，找到引发 bug 的提交
+  grep       输出匹配某种模式的内容
+  log        显示提交日志
+  show       Show various types of objects
+  status     显示工作树的状态
 ```
 
 
