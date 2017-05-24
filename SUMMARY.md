@@ -23,6 +23,10 @@
 * [重置](reset.md)
 * [清理](clean.md)
 
+## Rewriting
+
+* [git commit --amend](rewriting/git-commit-amend.md)
+
 ## 分支
 
 * [分支](branch.md)
