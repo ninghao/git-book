@@ -54,7 +54,7 @@ git@github.com:ninghao/ninghao-git.git
 
 一般远程仓库都有两种地址，一种是 HTTPS，一种是 SSH。这两种地址使用的验证方法不一样，HTTPS 用的是用户名 + 密码的方式验证你的身份。SSH 会使用 ssh-key 作为验证身份的方法。
 
-## 为项目创建远程仓库
+## 添加远程仓库
 
 有了远程仓库以后，我们可以把它添加到本地项目里。执行：
 
@@ -85,15 +85,9 @@ git remote -v
 返回：
 
 ```
-origin	git@github.com:ninghao/ninghao-git.git (fetch)
-origin	git@github.com:ninghao/ninghao-git.git (push)
+origin    git@github.com:ninghao/ninghao-git.git (fetch)
+origin    git@github.com:ninghao/ninghao-git.git (push)
 ```
 
 会告诉你 origin 这个仓库的地址。注意有 fetch（下载） 还有 push（上传） 用的地址。
-
-
-
-
-
-
 
