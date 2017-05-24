@@ -12,9 +12,9 @@ git pull 远程
 git pull --rebase 远程
 ```
 
+加了 --rebase 选项，会用 git rebase 代替 git merge。
+
 ## 练习
-
-
 
 
 
