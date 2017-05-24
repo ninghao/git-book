@@ -6,7 +6,14 @@ git pull 相当于 git fetch 以后，接着再 git merge。就是它把下载�
 git pull 远程
 ```
 
-或
+远程如果是 origin，当前所在分支是 master，那执行 git pull，就相当于：
+
+```
+git fetch origin
+git merge origin/master
+```
+
+## rebase
 
 ```
 git pull --rebase 远程
