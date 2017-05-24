@@ -23,5 +23,39 @@ git pull --rebase 远程
 
 ## 练习
 
+**1**，进入 ninghao-git 目录，修改 README.md，内容如下：
+
+```
+# Git :)
+一本关于 Git 的书。
+
+## 流程
+
+## 分支
+
+## 远程
+
+---
+by ninghao.net
+```
+
+做一次提交：
+
+```
+git commit -am '在说明文档里添加“远程”章节'
+```
+
+推送到远程：
+
+```
+git push
+```
+
+**2**，进入 xiaoxue-git 目录，执行：
+
+```
+git pull origin
+```
+
 
 
