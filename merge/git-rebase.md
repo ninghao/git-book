@@ -120,10 +120,199 @@ git commit -am '为仓库文档添加一段描述'
 
 ```
  → git log --oneline --graph
- 
+
 * 5db5973 为仓库文档添加一段描述
 * 9908ffb 添加仓库文档的大标题
 * e8204c5 添加介绍 Git 仓库的文档
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+里面没有刚才合并到 master 上的 add-bottom-text 分支里做的提交：
+
+```
+40670e5 为 resouces.md 添加底部文字
+```
+
+现在，假设仓库文件已经写完了，我们要把它合并到 master 分支上。执行：
+
+```
+git checkout master
+git merge repo-doc
+```
+
+合并以后，查看 master 的历史，应该像这样：
+
+```
+→ git log --oneline --graph
+
+*   cee6891 Merge branch 'repo-doc'
+|\  
+| * 5db5973 为仓库文档添加一段描述
+| * 9908ffb 添加仓库文档的大标题
+| * e8204c5 添加介绍 Git 仓库的文档
+* | 40670e5 为 resouces.md 添加底部文字
+|/  
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+**4**，git reflog
+
+```
+→ git reflog
+
+cee6891 HEAD@{0}: merge repo-doc: Merge made by the 'recursive' strategy.
+40670e5 HEAD@{1}: checkout: moving from repo-doc to master
+5db5973 HEAD@{2}: checkout: moving from master to repo-doc
+40670e5 HEAD@{3}: checkout: moving from repo-doc to master
+5db5973 HEAD@{4}: commit: 为仓库文档添加一段描述
+9908ffb HEAD@{5}: checkout: moving from master to repo-doc
+40670e5 HEAD@{6}: merge add-bottom-text: Fast-forward
+8d26980 HEAD@{7}: checkout: moving from add-bottom-text to master
+40670e5 HEAD@{8}: commit: 为 resouces.md 添加底部文字
+8d26980 HEAD@{9}: checkout: moving from master to add-bottom-text
+8d26980 HEAD@{10}: checkout: moving from repo-doc to master
+9908ffb HEAD@{11}: commit: 添加仓库文档的大标题
+e8204c5 HEAD@{12}: commit: 添加介绍 Git 仓库的文档
+8d26980 HEAD@{13}: checkout: moving from master to repo-doc
+```
+
+重置到这个状态：
+
+```
+40670e5 HEAD@{6}: merge add-bottom-text: Fast-forward
+```
+
+执行：
+
+```
+git reset 40670e5 --hard
+```
+
+查看 master 上的历史：
+
+```
+ → git log --oneline --graph
+ 
+* 40670e5 为 resouces.md 添加底部文字
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+又回到了合并 add-bottom-text 分支以后的样子了。
+
+**5**，git rebase。切换到 repo-doc：
+
+```
+git checkout repo-doc
+```
+
+查看历史：
+
+```
+→ git log --oneline --graph
+* 5db5973 为仓库文档添加一段描述
+* 9908ffb 添加仓库文档的大标题
+* e8204c5 添加介绍 Git 仓库的文档
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+执行：
+
+```
+git rebase master
+```
+
+返回：
+
+```
+First, rewinding head to replay your work on top of it...
+Applying: 添加介绍 Git 仓库的文档
+Applying: 添加仓库文档的大标题
+Applying: 为仓库文档添加一段描述
+```
+
+再查看一下历史：
+
+```
+ → git log --oneline --graph
+ 
+* a102dba 为仓库文档添加一段描述
+* 0944475 添加仓库文档的大标题
+* 655881c 添加介绍 Git 仓库的文档
+* 40670e5 为 resouces.md 添加底部文字
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+观察历史跟之前的区别，“为 resouces.md 添加底部文字” 这个提交在 repo-doc 的历史中出现了，我们在 repod-doc 上做的提交都会在这个 “为 resouces.md 添加底部文字” 之上出现。这就是 git rebase 做的事情。
+
+**6**，合并。再切换到 master 分支，然后执行合并：
+
+```
+git checkout master
+git merge repo-doc
+```
+
+返回：
+
+```
+Updating 40670e5..a102dba
+Fast-forward
+ repository.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 repository.md
+```
+
+这回合并是一次 Fast-forward 合并。查看 master 的历史：
+
+```
+→ git log --oneline --graph
+
+* a102dba 为仓库文档添加一段描述
+* 0944475 添加仓库文档的大标题
+* 655881c 添加介绍 Git 仓库的文档
+* 40670e5 为 resouces.md 添加底部文字
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+对比一下之前我们没在 repo-doc 里做 rebase ，然后直接合并 master 以后的历史：
+
+```
+*   cee6891 Merge branch 'repo-doc'
+|\  
+| * 5db5973 为仓库文档添加一段描述
+| * 9908ffb 添加仓库文档的大标题
+| * e8204c5 添加介绍 Git 仓库的文档
+* | 40670e5 为 resouces.md 添加底部文字
+|/  
 *   8d26980 Merge branch 'smiley-face'
 |\  
 | * 546fc18 在文档中添加笑脸符号
