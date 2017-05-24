@@ -202,7 +202,7 @@ git reset 40670e5 --hard
 
 ```
  → git log --oneline --graph
- 
+
 * 40670e5 为 resouces.md 添加底部文字
 *   8d26980 Merge branch 'smiley-face'
 |\  
@@ -253,11 +253,11 @@ Applying: 为仓库文档添加一段描述
 再查看一下历史：
 
 ```
- → git log --oneline --graph
- 
-* a102dba 为仓库文档添加一段描述
-* 0944475 添加仓库文档的大标题
-* 655881c 添加介绍 Git 仓库的文档
+→ git log --oneline --graph
+
+* e0efae3 为仓库文档添加一段描述
+* 2d49d40 添加仓库文档的大标题
+* 35e1941 添加介绍 Git 仓库的文档
 * 40670e5 为 resouces.md 添加底部文字
 *   8d26980 Merge branch 'smiley-face'
 |\  
@@ -279,11 +279,11 @@ git merge repo-doc
 返回：
 
 ```
-Updating 40670e5..a102dba
+Updating 40670e5..e0efae3
 Fast-forward
- repository.md | 2 ++
- 1 file changed, 2 insertions(+)
- create mode 100644 repository.md
+repository.md | 2 ++
+1 file changed, 2 insertions(+)
+create mode 100644 repository.md
 ```
 
 这回合并是一次 Fast-forward 合并。查看 master 的历史：
@@ -291,9 +291,9 @@ Fast-forward
 ```
 → git log --oneline --graph
 
-* a102dba 为仓库文档添加一段描述
-* 0944475 添加仓库文档的大标题
-* 655881c 添加介绍 Git 仓库的文档
+* e0efae3 为仓库文档添加一段描述
+* 2d49d40 添加仓库文档的大标题
+* 35e1941 添加介绍 Git 仓库的文档
 * 40670e5 为 resouces.md 添加底部文字
 *   8d26980 Merge branch 'smiley-face'
 |\  
