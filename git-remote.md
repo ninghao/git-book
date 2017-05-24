@@ -38,7 +38,11 @@ git remote rename 旧名字 新名字
 
 在一个远程仓库服务商那里为项目创建一个远程仓库。比如用你在 Github 申请的帐号，去创建一个仓库。[https://github.com/new](https://github.com/new)
 
+![](/assets/github-create-repository.png)
+
 输入 Repository name，仓库的名字，还有 Description，仓库的描述。选择仓库的类型，可以是 Public，公开，任何人都能看到你的仓库里的内容。也可以是 Private，私有，只有你，还有你允许的人才能看到仓库里的内容。
+
+![](/assets/github-repo-blank.png)
 
 在创建仓库时我为仓库起的名字是 ninghao-git，所以这个仓库的地址应该是：
 
