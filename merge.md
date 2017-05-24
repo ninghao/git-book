@@ -178,5 +178,17 @@ Merge made by the 'recursive' strategy.
 2b9a260 去掉文档中的笑脸符号
 ```
 
+**4**，删除分支。smiley-face 这个分支完成了它的任务，在上面做的提交现在也都合并到了 master 分支上了。现在我们可以把 smiley-face 分支删除掉。执行：
 
+```
+git branch -d smiley-face
+```
+
+返回：
+
+```
+Deleted branch smiley-face (was 546fc18).
+```
+
+查看分支列表，smiley-face 已经不见了。
 
