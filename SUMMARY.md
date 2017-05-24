@@ -38,6 +38,7 @@
 * [git push](git-push.md)
 * [git clone](git-clone.md)
 * [git fetch](git-fetch.md)
+* [git pull](git-pull.md)
 
 ## 附录
 
