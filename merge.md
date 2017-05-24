@@ -95,8 +95,6 @@ git log --oneline --graph
 
 加上 `--graph` 选项查看历史，会为你标记出使用 --no-ff 选项以后的合并。
 
-
-
 ```
 → git log --oneline -n 3
 e35e925 Merge branch 'smiley-face'
@@ -107,7 +105,77 @@ e35e925 Merge branch 'smiley-face'
 **3**，练习 3-Way 合并。再去重置一下 master 分支，执行：
 
 ```
-git reset HEAD~2 --hard
+git reset HEAD~1 --hard
+```
+
+现在的 master 的历史会是：
+
+```
+→ git log --oneline --graph
+
+* 2b9a260 去掉文档中的笑脸符号
+* fd3acec 在说明文档里添加流程章节
+* e648ade 在相关资源里添加一个资源列表项目
+```
+
+然后我们在 master 分支做点提交，假设现在有个 bug 或者功能急着要，你可以基于 master 去创建一个新的分支，在上面去修复 bug 或添加新功能，完成以后把它们合并到 master 上。
+
+这里我们直接修改一下 master 分支下的东西。修改 README.md，像这样：
+
+```
+# Git
+一本关于 Git 的书。
+
+## 流程
+
+---
+by ninghao.net
+```
+
+然后做一次提交：
+
+```
+git commit -am '在说明文档底部添加内容作者'
+```
+
+现在，再去合并一下 smiley-face 分支：
+
+```
+git merge smiley-face
+```
+
+在合并的时候虽然没用 --no-ff，但是也会提交我们要做一次合并提交，因为 Git 现在不能做 Fast-forward 提交。
+
+```
+Auto-merging README.md
+Merge made by the 'recursive' strategy.
+ README.md    | 2 +-
+ resources.md | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+```
+
+查看一下合并之后的历史：
+
+```
+→ git log --oneline --graph
+
+*   8d26980 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+* | 907acdc 在说明文档底部添加内容作者
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+```
+
+再像这样查看一下历史：
+
+```
+→ git log --oneline
+
+8d26980 Merge branch 'smiley-face'
+907acdc 在说明文档底部添加内容作者
+546fc18 在文档中添加笑脸符号
+2b9a260 去掉文档中的笑脸符号
 ```
 
 
