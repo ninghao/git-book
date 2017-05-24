@@ -23,7 +23,7 @@
 * [重置](reset.md)
 * [清理](clean.md)
 
-## Rewriting
+## 重写
 
 * [git commit --amend](rewriting/git-commit-amend.md)
 
