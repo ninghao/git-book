@@ -15,7 +15,3 @@
 
 ![](/assets/github-ssh-key-config.png)
 
-
-
-
-
