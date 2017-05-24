@@ -46,19 +46,11 @@ git remote rename 旧名字 新名字
 https://github.com/ninghao/ninghao-git.git
 ```
 
-或者 SSH 形式的仓库地址：
+或者 ssh 形式的仓库地址：
 
 ```
 git@github.com:ninghao/ninghao-git.git
 ```
 
 一般远程仓库都有两种地址，一种是 https，一种是 ssh。这两种地址使用的验证方法不一样，https 用的是用户名 + 密码的方式验证你的身份。ssh 会使用 ssh-key 作为验证身份的方法。
-
-
-
-
-
-
-
-
 
