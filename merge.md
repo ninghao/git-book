@@ -44,5 +44,71 @@ fd3acec 在说明文档里添加流程章节
 
 最近的 “在文档中添加笑脸符号” 这个提交，是我们在 smiley-face 分支上做的，在 master 分支上合并了这个 smiley-face 分支以后，这些提交你都可以在 master 上找到。
 
+**2**，合并时使用 --no-ff，表示不使用 Fast-forward 合并，这样可以在历史里记录一下合并动作。先重置一下 master ，抹掉合并以后加进来的提交：“在文档中添加笑脸符号”，执行：
+
+```
+git reset HEAD~1 --hard
+```
+
+现在 master 的历史会是：
+
+```
+→ git log --oneline -n 3
+
+2b9a260 去掉文档中的笑脸符号
+fd3acec 在说明文档里添加流程章节
+e648ade 在相关资源里添加一个资源列表项目
+```
+
+重新再去合并一下 smiley-face，这次合并的时候用一个 --no-ff 选项，执行：
+
+```
+git merge smiley-face --no-ff
+```
+
+返回：
+
+```
+Merge made by the 'recursive' strategy.
+ README.md    | 2 +-
+ resources.md | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+```
+
+提示合并用了 recursive 策略。用了 --no-ff 选项以后，在合并的时候会做一次新的提交。再这样查看一下历史：
+
+```
+git log --oneline --graph
+```
+
+显示：
+
+```
+→ git log --oneline --graph
+*   981ec29 Merge branch 'smiley-face'
+|\  
+| * 546fc18 在文档中添加笑脸符号
+|/  
+* 2b9a260 去掉文档中的笑脸符号
+* fd3acec 在说明文档里添加流程章节
+```
+
+加上 `--graph` 选项查看历史，会为你标记出使用 --no-ff 选项以后的合并。
+
+
+
+```
+→ git log --oneline -n 3
+e35e925 Merge branch 'smiley-face'
+546fc18 在文档中添加笑脸符号
+2b9a260 去掉文档中的笑脸符号
+```
+
+**3**，练习 3-Way 合并。再去重置一下 master 分支，执行：
+
+```
+git reset HEAD~2 --hard
+```
+
 
 
