@@ -57,5 +57,20 @@ git push
 git pull origin
 ```
 
+返回：
+
+```
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ninghao/ninghao-git
+   f4b6009..4eeb8d7  master     -> origin/master
+Updating f4b6009..4eeb8d7
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+```
+
 
 
