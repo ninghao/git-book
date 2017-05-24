@@ -40,8 +40,6 @@
 * [git fetch](git-fetch.md)
 * [git pull](git-pull.md)
 
-## 协作
-
 ## 附录
 
 * [相关资源](resources.md)
