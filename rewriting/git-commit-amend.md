@@ -65,5 +65,40 @@ git add resources.md
 git commit --amend --no-edit
 ```
 
-这次用了一个 `--no-edit`，表示不想编辑提交信息，直接用以前的就行。
+这次用了一个 `--no-edit`，表示不想编辑提交信息，直接用以前的就行。查看一下历史，再检查一下最近做的那次提交。
+
+```
+→ git log --oneline -n 3
+2b9a260 去掉文档中的笑脸符号
+fd3acec 在说明文档里添加流程章节
+e648ade 在相关资源里添加一个资源列表项目
+
+→ git show 2b9a260
+commit 2b9a2606ffb71b9f711f84cd85f7d0eea4045e97
+Author: wanghao8080 <117663444@qq.com>
+Date:   Wed May 24 08:37:36 2017 +0800
+
+   去掉文档中的笑脸符号
+
+diff --git a/README.md b/README.md
+index fdcae3b..8d1a6e8 100644
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,4 @@
+-# Git :)
++# Git
+一本关于 Git 的书。
+
+## 流程
+diff --git a/resources.md b/resources.md
+index 995248e..61456d0 100644
+--- a/resources.md
++++ b/resources.md
+@@ -1,2 +1,2 @@
+-# 相关资源 :)
++# 相关资源
+* 宁皓网《Git》课程包
+```
+
+
 
