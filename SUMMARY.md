@@ -22,11 +22,7 @@
 * [撤消](revert.md)
 * [重置](reset.md)
 * [清理](clean.md)
-
-## 重写
-
 * [git commit --amend](rewriting/git-commit-amend.md)
-* [git rebase](rewriting/git-rebase.md)
 
 ## 分支
 
@@ -39,4 +35,5 @@
 ## 附录
 
 * [相关资源](resources.md)
+* [git --help](git-help.md)
 
