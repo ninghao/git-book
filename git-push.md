@@ -40,3 +40,5 @@ Branch master set up to track remote branch master from origin.
 
 完成以后，刷新远程仓库页面，你会看到 push 上来的项目。
 
+![](/assets/github-repo.png)
+
