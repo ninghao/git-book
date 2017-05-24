@@ -49,10 +49,10 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
   branch     列出，创建，或删除分支
   checkout   切换分支或恢复工作树文件
   commit     把修改保存到仓库
-  diff       显示提交之间的修改
-  merge      Join two or more development histories together
+  diff       显示区别
+  merge      把两个或以上的开发历史合并到一块儿
   rebase     Reapply commits on top of another base tip
-  tag        Create, list, delete or verify a tag object signed with GPG
+  tag        创建，列出，删除，检查标签
 ```
 
 ## 协作
@@ -60,9 +60,9 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 \(查看: git help workflows\)
 
 ```
-  fetch      Download objects and refs from another repository
-  pull       Fetch from and integrate with another repository or a local branch
-  push       Update remote refs along with associated objects
+  fetch      从其它仓库那儿下载对象与 refs
+  pull       从远程那拉取并合并到本地
+  push       把提交推送到远程
 ```
 
 ## 全部
