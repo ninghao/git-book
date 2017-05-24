@@ -35,6 +35,7 @@
 * [远程](remote.md)
 * [Github](github.md)
 * [git remote](git-remote.md)
+* [git push](git-push.md)
 
 ## 附录
 
