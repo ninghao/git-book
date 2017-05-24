@@ -46,7 +46,7 @@ git remote rename 旧名字 新名字
 https://github.com/ninghao/ninghao-git.git
 ```
 
-或者 ssh 形式的仓库地址：
+或者 SSH 形式的仓库地址：
 
 ```
 git@github.com:ninghao/ninghao-git.git
