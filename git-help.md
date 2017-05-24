@@ -13,14 +13,14 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ## 开启工作区
 
- \(查看：git help tutorial\)
+\(查看：git help tutorial\)
 
 ```
   clone      把一个仓库克隆到一个新的目录下
   init       创建空白 Git 仓库，或重新初始化一个 Git 仓库
 ```
 
-## 处理当前修改 
+## 处理当前修改
 
 \(查看：git help everyday\)
 
@@ -33,7 +33,7 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
 
 ## 检查历史与状态
 
- \(查看：git help revisions\)
+\(查看：git help revisions\)
 
 ```
   bisect     使用 binary 搜索，找到引发 bug 的提交
@@ -49,16 +49,15 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
   branch     列出，创建，或删除分支
   checkout   切换分支或恢复工作树文件
   commit     把修改保存到仓库
-  diff       Show changes between commits, commit and working tree, etc
+  diff       显示提交之间的修改
   merge      Join two or more development histories together
   rebase     Reapply commits on top of another base tip
   tag        Create, list, delete or verify a tag object signed with GPG
-
 ```
 
 ## 协作
 
- \(查看: git help workflows\)
+\(查看: git help workflows\)
 
 ```
   fetch      Download objects and refs from another repository
