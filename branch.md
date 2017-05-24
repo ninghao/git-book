@@ -11,7 +11,25 @@ git branch
 ## 创建分支
 
 ```
-git branch 
+git branch 新分支
+```
+
+## 删除分支
+
+```
+git branch -d 分支
+```
+
+或使用更狠的删除：
+
+```
+git branch -D 分支
+```
+
+## 重命名分支
+
+```
+git branch -m 分支的新名字
 ```
 
 
