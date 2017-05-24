@@ -10,13 +10,13 @@ Collaborators，协作者。一起协作开发，项目都会有一个主要的�
 
 [https://github.com/ninghao/ninghao-git/settings/collaboration](https://github.com/ninghao/ninghao-git/settings/collaboration)
 
-![](/assets/github-search-collaborators.png)搜索到要添加的协作者以后，会自动向对方发出邀请。
+![](/assets/github-search-collaborators.png)**2**，搜索到要添加的协作者以后，会自动向对方发出邀请。
 
 ![](/assets/github-add-collaborators.png)
 
-在被添加的协作者那里会收到邀请。
+**3**，在被添加的协作者那里会收到邀请。
 
-![](/assets/github-invitation.png)对方接受邀请以后就可以向项目远程仓库推送她为项目做的修改了。![](/assets/github-accept-invitation.png)
+![](/assets/github-invitation.png)**4**，对方接受邀请以后就可以向项目远程仓库推送她为项目做的修改了。
 
 ![](/assets/github-accept-invitation.png)
 
