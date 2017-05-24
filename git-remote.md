@@ -52,5 +52,7 @@ https://github.com/ninghao/ninghao-git.git
 git@github.com:ninghao/ninghao-git.git
 ```
 
-一般远程仓库都有两种地址，一种是 https，一种是 ssh。这两种地址使用的验证方法不一样，https 用的是用户名 + 密码的方式验证你的身份。ssh 会使用 ssh-key 作为验证身份的方法。
+一般远程仓库都有两种地址，一种是 HTTPS，一种是 SSH。这两种地址使用的验证方法不一样，HTTPS 用的是用户名 + 密码的方式验证你的身份。SSH 会使用 ssh-key 作为验证身份的方法。
+
+
 
