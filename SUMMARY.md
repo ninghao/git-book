@@ -22,7 +22,7 @@
 * [撤消](revert.md)
 * [重置](reset.md)
 * [清理](clean.md)
-* [git commit --amend](rewriting/git-commit-amend.md)
+* [git commit --amend](git-commit-amend.md)
 
 ## 分支
 
