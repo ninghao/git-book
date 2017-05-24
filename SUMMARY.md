@@ -43,7 +43,7 @@
 ## 协作
 
 * [协作](collaborating.md)
-* [collaborators](collaborators.md)
+* [协作者](collaborators.md)
 * [centralized-workflow](ji-zhong-shi-gong-zuo-liu.md)
 
 ## 附录
