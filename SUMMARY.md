@@ -25,7 +25,7 @@
 
 ## 分支
 
-* [Branch](fen-zhi/branch.md)
+* [分支](branch.md)
 
 ## 远程
 
