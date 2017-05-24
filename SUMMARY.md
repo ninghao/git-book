@@ -40,9 +40,9 @@
 * [git fetch](git-fetch.md)
 * [git pull](git-pull.md)
 
-## collaborate
+## 协作
 
-* [collaborating](collaborate/collaborating.md)
+* [协作](collaborating.md)
 
 ## 附录
 
