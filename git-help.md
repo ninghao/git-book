@@ -49,7 +49,7 @@ usage: git [--version] [--help] [-C <path>] [-c name=value]
   branch     列出，创建，或删除分支
   checkout   切换分支或恢复工作树文件
   commit     把修改保存到仓库
-  diff       显示区别
+  diff       显示区别
   merge      把两个或以上的开发历史合并到一块儿
   rebase     Reapply commits on top of another base tip
   tag        创建，列出，删除，检查标签
