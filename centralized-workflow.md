@@ -175,7 +175,7 @@ To github.com:ninghao/ninghao-git.git
 
 这回王皓也成功地把提交 push 到了项目的远程。
 
-### 小雪继续修改项目
+### 小雪继续修改项目
 
 小雪没闲着，继续修改了项目的 README.md，现在内容如下：
 
