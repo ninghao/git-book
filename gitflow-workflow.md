@@ -26,13 +26,53 @@ Gitflow 工作流，扩展了集中式工作流与功能分支工作流。
 
 ### 创建开发分支
 
-项目的发起人一开始就应该基于 master 去创建一个开发分支，然后把它推送到远程。
+项目的发起人一开始就应该去创建一个开发分支，然后把它推送到远程。我们这个项目是王皓创建的，进入到 ninghao-git 目录，然后执行：
 
 ```
-git checkout -b develop master
+git branch develop
+git push -u origin develop
 ```
 
-基于 master 创建一个 develop 分支。
+返回：
+
+```
+Counting objects: 64, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (64/64), 6.69 KiB | 0 bytes/s, done.
+Total 64 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), done.
+To github.com:ninghao/ninghao-git.git
+ * [new branch]      develop -> develop
+Branch develop set up to track remote branch develop from origin.
+
+```
+
+团队成员的本地仓库也应该有个 develop 分支。小雪之前已经把项目克隆到本地了（xiaoxue-git），小雪进入到了她的项目 xiaoxue-git ，现在她可以去把王皓推送上去的 develop 分支下载到她的本地，执行：
+
+```
+git fetch
+```
+
+返回：
+
+```
+From https://github.com/ninghao/ninghao-git
+ * [new branch]      develop    -> origin/develop
+```
+
+再执行：
+
+```
+git checkout -b develop origin/develop
+```
+
+返回：
+
+```
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch 'develop'
+```
 
 
 
