@@ -85,13 +85,15 @@ Password for 'https://xiaoxue8080@github.com':
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 398 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 400 bytes | 0 bytes/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/ninghao/ninghao-git.git
-   4eeb8d7..b9f3ba9  master -> master
+   4eeb8d7..70161b2  master -> master
 Branch master set up to track remote branch master from origin.
 ```
+
+![](/assets/github-multi-users-commits.png)
 
 ### 王皓也对项目做了修改
 
@@ -151,7 +153,7 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 From github.com:ninghao/ninghao-git
-   4eeb8d7..b9f3ba9  master     -> origin/master
+   4eeb8d7..70161b2  master     -> origin/master
 First, rewinding head to replay your work on top of it...
 Applying: 为“流程”章节添加描述
 ```
@@ -164,11 +166,11 @@ Applying: 为“流程”章节添加描述
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 420 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 418 bytes | 0 bytes/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:ninghao/ninghao-git.git
-   b9f3ba9..b5fd9fb  master -> master
+   70161b2..25e582e  master -> master
 ```
 
 这回王皓也成功地把提交 push 到了项目的远程。
@@ -210,6 +212,4 @@ git pull --rebase
 ```
 
 但是 ...
-
-
 
