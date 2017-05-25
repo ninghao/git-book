@@ -68,5 +68,5 @@ To https://github.com/ninghao/ninghao-git.git
  * [new branch]      workflow-doc -> workflow-doc
 ```
 
-push 成功。
+push 成功~  她又决定去开一个 pull request ，跟大家讨论一下自己写的文档。
 
