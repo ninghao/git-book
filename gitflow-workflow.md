@@ -127,5 +127,42 @@ git branch -d remote-doc
 
 ### 准备发行
 
+这个项目做的差不多了，可以准备一次正式的发行。这个任务还是小雪去做，她先要去创建一个为发行准备的发行分支，分支名一般可以使用 release- 作为前缀。执行：
+
+```
+git checkout -b release-0.1 develop
+```
+
+她把发行分支推送到了项目的中央远程仓库：
+
+```
+git push origin release-0.1
+```
+
+本次发行任务的小组成员里还有王皓，他可以往这个发行分支里做自己的提交。新功能不要放到发行分支了，你可以留着下一次发行用，发行分支主要就是为项目的发行做准备，比如修复 bug 之类的。
+
+### 完成发行
+
+大家共同的努力，项目现在已经可以正式发行了。这件事还是小雪去做：
+
+```
+git checkout master
+git merge release-0.1
+git push
+git checkout develop
+git merge release-0.1
+git push
+git branch -d release-0.1
+```
+
+打个标签：
+
+```
+git tag -a v0.1 -m '项目的首次发行'
+git push --tags
+```
+
+
+
 
 
