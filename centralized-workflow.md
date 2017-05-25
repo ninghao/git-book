@@ -26,5 +26,5 @@ git config --local user.email 'xiaoxue@ninghao.net'
 
 这样，在我的电脑桌面上的 xiaoxue-git 目录下对项目做的修改提交，用的就是 xiaoxue8080 的身份。
 
-我的电脑桌面上还有一个 ninghao-git 目录，我在全局配置的 Git，使用的用户是 wanghao8080，所以在 ninghao-git 目录下做的提交就是用 wanghao8080 这个用户身份做的。
+我的电脑桌面上还有一个 ninghao-git 目录，这是我最开始创建的项目所在的目录。我在全局配置的 Git，使用的用户是 wanghao8080，所以在 ninghao-git 目录下做的提交就是用 wanghao8080 这个用户身份做的。
 
