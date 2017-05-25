@@ -49,6 +49,7 @@
 * [功能分支工作流](feature-branch-workflow.md)
 * [Gitflow 工作流](gitflow-workflow.md)
 * [Forking 工作流](forking-workflow.md)
+* [Pull Request](pull-request.md)
 
 ## 附录
 
