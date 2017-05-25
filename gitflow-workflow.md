@@ -141,6 +141,25 @@ git push origin release-0.1
 
 本次发行任务的小组成员里还有王皓，他可以往这个发行分支里做自己的提交。新功能不要放到发行分支了，你可以留着下一次发行用，发行分支主要就是为项目的发行做准备，比如修复 bug 之类的。
 
+小雪要去做一点修改，打开 remote.md，在文档里添加一个笑脸符号：
+
+```
+# 远程 :)
+Remote，指的是项目的远程仓库。
+```
+
+做一次提交：
+
+```
+git commit -am '在远程文档里添加笑脸符号'
+```
+
+Push：
+
+```
+git push origin release-0.1
+```
+
 ### 完成发行
 
 大家共同的努力，项目现在已经可以正式发行了。这件事还是小雪去做：
@@ -155,7 +174,49 @@ git push
 git branch -d release-0.1
 ```
 
-打个标签：
+完整版过程：
+
+```
+→ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+→ git merge release-0.1
+Merge made by the 'recursive' strategy.
+remote.md | 2 ++
+1 file changed, 2 insertions(+)
+create mode 100644 remote.md
+
+→ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 293 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ninghao/ninghao-git.git
+  5ba8a81..9d19981  master -> master
+
+→ git checkout develop
+Switched to branch 'develop'
+Your branch is up-to-date with 'origin/develop'.
+
+→ git merge release-0.1
+Updating 53c71aa..20e1feb
+Fast-forward
+remote.md | 2 +-
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+→ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/ninghao/ninghao-git.git
+  53c71aa..20e1feb  develop -> develop
+
+→ git branch -d release-0.1
+Deleted branch release-0.1 (was 20e1feb).
+```
+
+给这次发行打个标签：
 
 ```
 git tag -a v0.1 -m '项目的首次发行'
@@ -168,14 +229,40 @@ git push --tags
 
 ```
 git checkout -b issue-#001 master
-# 去修复 Bug
+```
+
+修复 Bug 需要在 repository.md 里添加一个笑脸：
+
+```
+# 仓库 :)
+Repository，仓库，简称 Repo。
+```
+
+提交：
+
+```
+git commit -am '修复了 issue-#001'
+```
+
+把修复合并到 master：
+
+```
 git checkout master
 git merge issue-#001 
 git push
+```
 
+这个修复也需要合并到 develop：
+
+```
 git checkout develop
 git merge issue-#001
 git push
+```
+
+完成以后就可以删除掉修复 bug 用的这个分支了：
+
+```
 git branch -d issue-#001
 ```
 
