@@ -10,7 +10,21 @@ Centralized Workflow。项目的所有协作者把对项目的修改推送到统
 
 ## 练习
 
+使用集中式工作流开发，很多事情我们之前已经做了。项目的发起人已经在本地创建好了仓库，为项目在远程也创建了仓库，把项目推送到了远程，为项目的远程仓库添加了协作者（wanghao8080，xiaoxue8080）。协作者（xiaoxue8080）也把项目克隆到了本地准备开发。
 
+### 模拟准备
 
+现在我再模拟一下使用集中式工作流，多协作者共同开发项目。介绍  git clone 的时候，我说用小雪的身份克隆了一份远程仓库，放到 xiaoxue-git 目录的下面。因为我是在同一台电脑上模拟多开发者，所以我需要单独配置一下 xiaoxue-git 这个项目，设置一下提交者的名字，还有邮件地址。
 
+进入 xiaoxue-git 这个目录，执行：
+
+```
+cd ~/desktop/xiaoxue-git
+git config --local user.name 'xiaoxue8080'
+git config --local user.email 'xiaoxue@ninghao.net'
+```
+
+这样，在我的电脑桌面上的 xiaoxue-git 目录下对项目做的修改提交，用的就是 xiaoxue8080 的身份。
+
+我的电脑桌面上还有一个 ninghao-git 目录，我在全局配置的 Git，使用的用户是 wanghao8080，所以在 ninghao-git 目录下做的提交就是用 wanghao8080 这个用户身份做的。
 
