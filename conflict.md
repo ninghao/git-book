@@ -1,5 +1,7 @@
 # 冲突
 
+小雪再 pull 的时候遇到了冲突。
+
 ```
 → git pull --rebase
 
@@ -12,7 +14,7 @@ From https://github.com/ninghao/ninghao-git
 First, rewinding head to replay your work on top of it...
 Applying: 为说明文档章节添加描述文字
 Using index info to reconstruct a base tree...
-M	README.md
+M    README.md
 Falling back to patching base and 3-way merge...
 Auto-merging README.md
 CONFLICT (content): Merge conflict in README.md
@@ -25,7 +27,7 @@ If you prefer to skip this patch, run "git rebase --skip" instead.
 To check out the original branch and stop rebasing, run "git rebase --abort".
 ```
 
-查看状态：
+于是她查看状态，看看到底发生了什么事情：
 
 ```
 → git status
@@ -42,10 +44,9 @@ Unmerged paths:
  both modified:   README.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
-
 ```
 
-内容：
+引起冲突的是 README.md ，打开这个文件，里面的内容如下：
 
 ```
 # Git :)
@@ -69,7 +70,6 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ---
 by ninghao.net
-
 ```
 
 冲突的地方是：
@@ -83,7 +83,7 @@ by ninghao.net
 >>>>>>> 为说明文档章节添加描述文字
 ```
 
-这样修改了发生冲突的地方
+因为小雪 pull 下来的远程提交里面，也修改了流程章节下面的描述。小雪要解决这个冲突，她觉得自己写的比较写，于是她这样修改了发生冲突的地方：
 
 ```
 # Git :)
@@ -103,7 +103,34 @@ by ninghao.net
 
 ---
 by ninghao.net
+```
 
+再添加一下：
+
+```
+git add README.md
+```
+
+继续 rebase ：
+
+```
+→ git rebase --continue
+Applying: 为说明文档章节添加描述文字
+```
+
+完美地解决了冲突，push：
+
+```
+→ git push
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 476 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ninghao/ninghao-git.git
+  25e582e..20c43d5  master -> master
 ```
 
 
