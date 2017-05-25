@@ -162,7 +162,22 @@ git tag -a v0.1 -m '项目的首次发行'
 git push --tags
 ```
 
+### 发现 Bug
 
+哦 ~ 发现一个 Bug，要马上修复。
+
+```
+git checkout -b issue-#001 master
+# 去修复 Bug
+git checkout master
+git merge issue-#001 
+git push
+
+git checkout develop
+git merge issue-#001
+git push
+git branch -d issue-#001
+```
 
 
 
