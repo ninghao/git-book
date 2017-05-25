@@ -219,8 +219,18 @@ Deleted branch release-0.1 (was 20e1feb).
 给这次发行打个标签：
 
 ```
+git checkout master
 git tag -a v0.1 -m '项目的首次发行'
 git push --tags
+```
+
+```
+Counting objects: 1, done.
+Writing objects: 100% (1/1), 183 bytes | 0 bytes/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/ninghao/ninghao-git.git
+ * [new tag]         v0.1 -> v0.1
+
 ```
 
 ### 发现 Bug
@@ -267,6 +277,4 @@ git branch -d issue-#001
 ```
 
 ~ 戏剧的一天结束了，下班 ~
-
-
 
