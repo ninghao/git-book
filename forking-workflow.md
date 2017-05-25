@@ -107,14 +107,31 @@ To https://github.com/hulk8080/ninghao-git.git
 error: failed to push some refs to 'https://github.com/hulk8080/ninghao-git.git'
 ```
 
+```
+ → git push https://hulk8080@github.com/hulk8080/ninghao-git
+Password for 'https://hulk8080@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 596 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/hulk8080/ninghao-git
+ * [new branch]      help-doc -> help-doc
+```
+
+![](/assets/github-pull-request-hulk.png)
+
 **4**，维护人
 
 ```
-git fetch https://github.com/hulk8080/ninghao-git.git feature-branch
+git fetch https://github.com/hulk8080/ninghao-git.git help-doc
 git checkout master
 git merge FETCH_HEAD
 git push origin master
 ```
+
+![](/assets/github-pull-request-hulk-merged.png)
 
 **5**，所有人
 
