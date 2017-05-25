@@ -57,7 +57,83 @@ git checkout -b develop origin/develop
 
 ### 小雪有了新任务
 
-现在小雪有了新任务或者新的想法，她想去试一下，可以先去创建一个功能分支，方法与流程在功能分支工作流里介绍到了。
+现在小雪有了新任务或者新的想法，她想去试一下。可以先去创建一个功能分支，方法与流程在功能分支工作流里介绍到了，不太一样的是，Gitflow 里面， 功能分支要基于 develop 分支创建。其它的跟功能分支工作流差不多，创建新的功能分支，修改项目，提交，推送到远程，完成了功能以后可以发起一个 pull request ，大家讨论以后可以把功能分支合并到 develop 分支上。
+
+小雪要去写一个关于介绍 Git 远程仓库的文档，她先去创建了一个分支：
+
+```
+git checkout -b remote-doc develop
+```
+
+接着创建了一个 Markdown 文档：
+
+```
+touch remote.md
+```
+
+做了一次提交：
+
+```
+git add .
+git commit -m '添加介绍远程仓库的文档'
+```
+
+又这样修改了一下 remote.md：
+
+```
+# 远程
+Remote，指的是项目的远程仓库。
+```
+
+又做了一次提交：
+
+```
+git commit -am '添加介绍远程仓库的内容'
+```
+
+### 小雪完成了任务
+
+小雪觉得文档已经写完了，她可以把功能分支 push 到远程，然后发起 pull request，或者也可以直接把功能分支合并到 develop 分支。
+
+她先看看远程的 develop 有啥新东西没：
+
+```
+git pull origin develop
+```
+
+切换到 develop：
+
+```
+git checkout develop
+```
+
+把 remote-doc 这个功能分支合并到 develop：
+
+```
+git merge remote-doc
+```
+
+把合并之后的 develop 推送到远程：
+
+```
+git push origin develop
+```
+
+现在，功能分支可以删除掉了：
+
+```
+git branch -d remote-doc
+```
+
+### 项目要准备一次发行
+
+
+
+
+
+
+
+
 
 
 
