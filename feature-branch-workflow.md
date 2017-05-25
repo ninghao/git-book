@@ -39,7 +39,6 @@ git commit -m '添加介绍工作流的文档'
 * 集中式工作流
 * 功能分支工作流
 * Gitflow 工作流
-
 ```
 
 又做了一次提交：
@@ -48,5 +47,26 @@ git commit -m '添加介绍工作流的文档'
 git commit -am '列出几种 Git 工作流'
 ```
 
+### 小雪完成了任务
 
+小雪觉得完成了任务，写完了关于介绍工作流的文档。她决定把自己的工作 push 到远程，让大家看看：
+
+```
+git push origin workflow-doc
+```
+
+返回：
+
+```
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 599 bytes | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/ninghao/ninghao-git.git
+ * [new branch]      workflow-doc -> workflow-doc
+```
+
+push 成功。
 
