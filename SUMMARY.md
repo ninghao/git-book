@@ -45,7 +45,7 @@
 * [协作](collaborating.md)
 * [协作者](collaborators.md)
 * [集中式工作流](ji-zhong-shi-gong-zuo-liu.md)
-* [feature-branch-workflow](feature-branch-workflow.md)
+* [功能分支工作流](feature-branch-workflow.md)
 
 ## 附录
 
