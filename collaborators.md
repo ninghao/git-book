@@ -20,3 +20,9 @@ Collaborators，协作者。一起协作开发，项目都会有一个主要的�
 
 ![](/assets/github-accept-invitation.png)
 
+**5**，用同样的方法去邀请其他的开发者。
+
+![](/assets/github-repo-collaborators.png)
+
+
+
