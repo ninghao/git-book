@@ -47,7 +47,7 @@
 * [集中式工作流](ji-zhong-shi-gong-zuo-liu.md)
 * [功能分支工作流](feature-branch-workflow.md)
 * [Gitflow 工作流](gitflow-workflow.md)
-* [forking-workflow](forking-workflow.md)
+* [Forking 工作流](forking-workflow.md)
 
 ## 附录
 
