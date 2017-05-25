@@ -62,7 +62,6 @@ git config --local user.email 'xiaoxue@ninghao.net'
 
 ---
 by ninghao.net
-
 ```
 
 做了一次提交：
@@ -111,7 +110,6 @@ Branch master set up to track remote branch master from origin.
 
 ---
 by ninghao.net
-
 ```
 
 做了一次提交：
@@ -162,7 +160,7 @@ Applying: 为“流程”章节添加描述
 
 ```
  → git push
- 
+
 Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (3/3), done.
@@ -174,4 +172,49 @@ To github.com:ninghao/ninghao-git.git
 ```
 
 这回王皓也成功地把提交 push 到了项目的远程。
+
+### 小雪继续修改项目
+
+小雪没闲着，继续修改了项目的 README.md，现在内容如下：
+
+```
+# Git :)
+一本关于 Git 的书。
+
+## 流程
+介绍 Git 的使用流程。
+
+## 分支
+创建与管理项目的分支。
+
+## 远程
+为项目添加远程仓库。
+
+## 协作
+用 Git 协作开发项目。
+
+---
+by ninghao.net
+
+```
+
+她又做了一次提交：
+
+```
+git commit -am '为说明文档章节添加描述文字'
+```
+
+提交以后，她打算休息一下，逛逛淘宝。于是她决定要把自己做的提交推送到远程，让大家知道自己对项目做的修改。小雪知道，在 push 之前，最好先去 pull 一下，因为很可能别人也对项目做了修改。于是她执行了：
+
+```
+git pull --rebase
+```
+
+但是 ... 
+
+### 冲突发生了
+
+小
+
+
 
