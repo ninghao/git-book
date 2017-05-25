@@ -105,7 +105,6 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/hulk8080/ninghao-git.git
  ! [remote rejected] help-doc -> help-doc (permission denied)
 error: failed to push some refs to 'https://github.com/hulk8080/ninghao-git.git'
-
 ```
 
 **4**，维护人
