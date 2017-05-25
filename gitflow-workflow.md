@@ -125,17 +125,7 @@ git push origin develop
 git branch -d remote-doc
 ```
 
-### 项目要准备一次发行
-
-
-
-
-
-
-
-
-
-
+### 准备发行
 
 
 
