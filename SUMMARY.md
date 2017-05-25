@@ -45,7 +45,7 @@
 * [协作](collaborating.md)
 * [协作者](collaborators.md)
 * [集中式工作流](centralized-workflow.md)
-* [冲突](centralized-workflow.md/chong-tu.md)
+  * [冲突](centralized-workflow.md/chong-tu.md)
 * [功能分支工作流](feature-branch-workflow.md)
 * [Gitflow 工作流](gitflow-workflow.md)
 * [Forking 工作流](forking-workflow.md)
