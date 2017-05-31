@@ -27,7 +27,7 @@
 ## 分支
 
 * [分支](branch.md)
-* [全并](merge.md)
+* [合并](merge.md)
 * [git rebase](git-rebase.md)
 
 ## 远程
